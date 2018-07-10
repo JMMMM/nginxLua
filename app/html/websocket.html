@@ -1,0 +1,30 @@
+<html>
+    <header>
+        <script src="js/jquery-3.3.1.min.js" type="text/javascript" charset="utf-8"></script>
+        <script type="text/javascript">
+            var socket;
+            $("body").ready(function(){
+                console.log("hello world!")
+                socket = new WebSocket("ws://localhost:9000/socket_server")
+                socket.onopen = function(){
+                    alert("Socket opening...")
+                };
+
+                socket.onmessage=function (msg) {
+                    alert(msg.data);
+                };
+
+                socket.onclose = function(){
+                    alert("Socket closed...")
+                };
+
+                socket.onerror = function(){
+                    alert("error....")
+                };
+            });
+        </script>
+    </header>
+    <body>
+
+    </body>
+</html>
