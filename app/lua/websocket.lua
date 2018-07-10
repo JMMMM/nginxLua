@@ -30,6 +30,7 @@ local push = function()
             ngx.log(ngx.INFO,item)
             if not bytes then
                 ngx.log(ngx.ERR,"failed to send text:",err)
+                return ngx.exit(444)
             end
         end
     end
