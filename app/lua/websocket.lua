@@ -1,6 +1,5 @@
 local server = require "resty.websocket.server"
 local pool = require "redis_pool"
-local ok,redis = pool:get_connect()
 
 local topic = "topic1"
 
@@ -15,13 +14,16 @@ if not wb then
   return ngx.exit(444)
 end
 
-local res,err = redis:subscribe(topic)
-if not res then
-    ngx.log(ngx.ERR,"failed to sub redis: ",err)
-end
-
 
 local push = function()
+
+    local ok,redis = pool:get_connect()
+
+    local res,err = redis:subscribe(topic)
+    if not res then
+        ngx.log(ngx.ERR,"failed to sub redis: ",err)
+    end
+
     while true do
         local res,err = redis:read_reply()
         if res then
@@ -30,10 +32,13 @@ local push = function()
             ngx.log(ngx.INFO,item)
             if not bytes then
                 ngx.log(ngx.ERR,"failed to send text:",err)
+                pool.close(redis)
                 return ngx.exit(444)
             end
         end
     end
+
+    ngx.log(ngx.ERR,"stop the push .... ")
 end
 
 local co = ngx.thread.spawn(push)
@@ -42,10 +47,10 @@ local co = ngx.thread.spawn(push)
 while true do
     -- 获取数据
     local data, typ, err = wb:recv_frame()
-
     -- 如果连接损坏 退出
     if wb.fatal then
         ngx.log(ngx.ERR, "failed to receive frame: ", err)
+        pool.close(redis)
         return ngx.exit(444)
     end
 
@@ -56,12 +61,13 @@ while true do
           return ngx.exit(444)
         end
     elseif typ == "close" then
-        wb:send_close()
-        break
+        pool.close(redis)
+        return ngx.exit(444)
     elseif typ == "ping" then
         local bytes, err = wb:send_pong()
         if not bytes then
             ngx.log(ngx.ERR, "failed to send pong: ", err)
+            pool.close(redis)
             return ngx.exit(444)
         end
     else
@@ -70,4 +76,5 @@ while true do
 end
 
 wb:send_close()
+pool.close(redis)
 ngx.thread.wait(co)
