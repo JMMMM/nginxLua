@@ -2,13 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="5d68c769-70ab-45a7-879e-0c53c61a8b37" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/thriftCompiler.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/conf/gray.conf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/html/gray.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/html/product.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/conf/lua.conf" beforeDir="false" afterPath="$PROJECT_DIR$/app/conf/lua.conf" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/nginx_conf/nginx.conf" beforeDir="false" afterPath="$PROJECT_DIR$/nginx_conf/nginx.conf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/bin/deploy.sh" beforeDir="false" afterPath="$PROJECT_DIR$/app/bin/deploy.sh" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -20,11 +14,20 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="gray.conf" pinned="false" current-in-tab="true">
+      <file leaf-file-name="gray.conf" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/conf/gray.conf">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="105">
               <caret line="7" selection-start-line="7" selection-end-line="10" selection-end-column="3" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="deploy.sh" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/app/bin/deploy.sh">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="30">
+              <caret line="2" column="47" selection-start-line="2" selection-start-column="47" selection-end-line="2" selection-end-column="47" />
             </state>
           </provider>
         </entry>
@@ -83,7 +86,6 @@
         <option value="$PROJECT_DIR$/app/html/websocket.html" />
         <option value="$PROJECT_DIR$/app/lua/demo1.lua" />
         <option value="$PROJECT_DIR$/app/lua/demo2.lua" />
-        <option value="$PROJECT_DIR$/app/bin/deploy.sh" />
         <option value="$PROJECT_DIR$/app/lua/demo3.lua" />
         <option value="$PROJECT_DIR$/app/lua/websocket.lua" />
         <option value="$PROJECT_DIR$/app/lua/redis_pool.lua" />
@@ -94,6 +96,7 @@
         <option value="$PROJECT_DIR$/app/bin/taillog.sh" />
         <option value="$PROJECT_DIR$/nginx_conf/nginx.conf" />
         <option value="$PROJECT_DIR$/app/conf/gray.conf" />
+        <option value="$PROJECT_DIR$/app/bin/deploy.sh" />
       </list>
     </option>
   </component>
@@ -114,8 +117,8 @@
     <packageJsonPaths />
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="609" />
-    <option name="y" value="23" />
+    <option name="x" value="126" />
+    <option name="y" value="57" />
     <option name="width" value="1249" />
     <option name="height" value="757" />
   </component>
@@ -134,35 +137,6 @@
             <path>
               <item name="nginxLua" type="b2602c69:ProjectViewProjectNode" />
               <item name="nginxLua" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="nginxLua" type="b2602c69:ProjectViewProjectNode" />
-              <item name="nginxLua" type="462c0819:PsiDirectoryNode" />
-              <item name="app" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="nginxLua" type="b2602c69:ProjectViewProjectNode" />
-              <item name="nginxLua" type="462c0819:PsiDirectoryNode" />
-              <item name="app" type="462c0819:PsiDirectoryNode" />
-              <item name="bin" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="nginxLua" type="b2602c69:ProjectViewProjectNode" />
-              <item name="nginxLua" type="462c0819:PsiDirectoryNode" />
-              <item name="app" type="462c0819:PsiDirectoryNode" />
-              <item name="conf" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="nginxLua" type="b2602c69:ProjectViewProjectNode" />
-              <item name="nginxLua" type="462c0819:PsiDirectoryNode" />
-              <item name="app" type="462c0819:PsiDirectoryNode" />
-              <item name="html" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="nginxLua" type="b2602c69:ProjectViewProjectNode" />
-              <item name="nginxLua" type="462c0819:PsiDirectoryNode" />
-              <item name="app" type="462c0819:PsiDirectoryNode" />
-              <item name="lua" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="nginxLua" type="b2602c69:ProjectViewProjectNode" />
@@ -256,15 +230,15 @@
       <updated>1531193041084</updated>
       <workItem from="1531193044195" duration="51000" />
       <workItem from="1531193136834" duration="10077000" />
-      <workItem from="1535964316972" duration="4983000" />
+      <workItem from="1535964316972" duration="5069000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="15547000" />
+    <option name="totallyTimeSpent" value="15633000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="609" y="23" width="1249" height="757" extended-state="0" />
+    <frame x="126" y="57" width="1249" height="757" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info anchor="right" id="Palette" order="3" />
@@ -278,10 +252,10 @@
       <window_info anchor="bottom" id="Database Changes" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Run" order="2" />
       <window_info anchor="bottom" id="Version Control" order="7" />
-      <window_info active="true" anchor="bottom" id="Terminal" order="7" sideWeight="0.49958575" visible="true" weight="0.3287879" />
+      <window_info anchor="bottom" id="Terminal" order="7" sideWeight="0.49958575" visible="true" weight="0.3287879" />
       <window_info id="Capture Tool" order="2" />
       <window_info id="Designer" order="2" />
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.15658657" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.15658657" />
       <window_info anchor="right" id="Database" order="3" />
       <window_info anchor="right" id="SciView" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
@@ -525,13 +499,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/bin/deploy.sh">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="60">
-          <caret line="4" lean-forward="true" selection-start-line="4" selection-end-line="4" selection-end-column="33" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/bin/reload.sh">
       <provider selected="true" editor-type-id="text-editor">
         <state>
@@ -581,6 +548,13 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="105">
           <caret line="7" selection-start-line="7" selection-end-line="10" selection-end-column="3" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/bin/deploy.sh">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="30">
+          <caret line="2" column="47" selection-start-line="2" selection-start-column="47" selection-end-line="2" selection-end-column="47" />
         </state>
       </provider>
     </entry>
