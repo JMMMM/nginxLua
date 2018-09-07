@@ -1,5 +1,5 @@
 local redis_pool = require("redis_pool")
-local config = require "config.lua"
+local config = require("config")
 
 local pool = redis_pool:new(config.redis_config)
 local ok, err = redis_pool:get_connect()
