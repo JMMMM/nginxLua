@@ -2,7 +2,14 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="5d68c769-70ab-45a7-879e-0c53c61a8b37" name="Default" comment="">
+      <change afterPath="$PROJECT_DIR$/app/lua/update.lua" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/bin/deploy.sh" beforeDir="false" afterPath="$PROJECT_DIR$/app/bin/deploy.sh" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/conf/gray.conf" beforeDir="false" afterPath="$PROJECT_DIR$/app/conf/gray.conf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/lua/demo1.lua" beforeDir="false" afterPath="$PROJECT_DIR$/app/lua/demo1.lua" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/lua/demo4.lua" beforeDir="false" afterPath="$PROJECT_DIR$/app/lua/demo4.lua" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/lua/redis_pool.lua" beforeDir="false" afterPath="$PROJECT_DIR$/app/lua/redis_pool.lua" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/nginx_conf/nginx.conf" beforeDir="false" afterPath="$PROJECT_DIR$/nginx_conf/nginx.conf" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -18,43 +25,16 @@
         <entry file="file://$PROJECT_DIR$/app/conf/gray.conf">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="105">
-              <caret line="7" selection-start-line="7" selection-end-line="10" selection-end-column="3" />
+              <caret line="7" column="18" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="18" />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="deploy.sh" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/app/bin/deploy.sh">
+      <file leaf-file-name="redis_pool.lua" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/app/lua/redis_pool.lua">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="30">
-              <caret line="2" column="47" selection-start-line="2" selection-start-column="47" selection-end-line="2" selection-end-column="47" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="demo1.lua" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/lua/demo1.lua">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="290">
-              <caret line="22" column="17" selection-start-line="22" selection-end-line="23" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="lua.conf" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/conf/lua.conf">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="60">
-              <caret line="4" column="20" lean-forward="true" selection-start-line="4" selection-end-line="5" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="demo3.lua" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/lua/demo3.lua">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="120">
-              <caret line="8" lean-forward="true" selection-start-line="8" selection-end-line="8" />
+            <state relative-caret-position="225">
+              <caret line="15" column="3" lean-forward="true" selection-start-line="15" selection-start-column="3" selection-end-line="15" selection-end-column="3" />
             </state>
           </provider>
         </entry>
@@ -71,8 +51,8 @@
   <component name="FindInProjectRecents">
     <findStrings>
       <find>redisConfig</find>
-      <find>redis_pool</find>
       <find>root</find>
+      <find>redis_pool</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -84,19 +64,20 @@
         <option value="$PROJECT_DIR$/app/html/jquery-3.3.1.min.js" />
         <option value="$PROJECT_DIR$/app/html/index.html" />
         <option value="$PROJECT_DIR$/app/html/websocket.html" />
-        <option value="$PROJECT_DIR$/app/lua/demo1.lua" />
         <option value="$PROJECT_DIR$/app/lua/demo2.lua" />
         <option value="$PROJECT_DIR$/app/lua/demo3.lua" />
         <option value="$PROJECT_DIR$/app/lua/websocket.lua" />
-        <option value="$PROJECT_DIR$/app/lua/redis_pool.lua" />
-        <option value="$PROJECT_DIR$/app/lua/demo4.lua" />
         <option value="$PROJECT_DIR$/app/html/product.html" />
         <option value="$PROJECT_DIR$/app/html/gray.html" />
         <option value="$PROJECT_DIR$/app/conf/lua.conf" />
         <option value="$PROJECT_DIR$/app/bin/taillog.sh" />
-        <option value="$PROJECT_DIR$/nginx_conf/nginx.conf" />
-        <option value="$PROJECT_DIR$/app/conf/gray.conf" />
+        <option value="$PROJECT_DIR$/app/lua/demo4.lua" />
         <option value="$PROJECT_DIR$/app/bin/deploy.sh" />
+        <option value="$PROJECT_DIR$/nginx_conf/nginx.conf" />
+        <option value="$PROJECT_DIR$/app/lua/demo1.lua" />
+        <option value="$PROJECT_DIR$/app/lua/redis_pool.lua" />
+        <option value="$PROJECT_DIR$/app/lua/update.lua" />
+        <option value="$PROJECT_DIR$/app/conf/gray.conf" />
       </list>
     </option>
   </component>
@@ -117,8 +98,8 @@
     <packageJsonPaths />
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="126" />
-    <option name="y" value="57" />
+    <option name="x" value="486" />
+    <option name="y" value="23" />
     <option name="width" value="1249" />
     <option name="height" value="757" />
   </component>
@@ -130,7 +111,6 @@
     <panes>
       <pane id="Scope" />
       <pane id="AndroidView" />
-      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -141,12 +121,42 @@
             <path>
               <item name="nginxLua" type="b2602c69:ProjectViewProjectNode" />
               <item name="nginxLua" type="462c0819:PsiDirectoryNode" />
+              <item name="app" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="nginxLua" type="b2602c69:ProjectViewProjectNode" />
+              <item name="nginxLua" type="462c0819:PsiDirectoryNode" />
+              <item name="app" type="462c0819:PsiDirectoryNode" />
+              <item name="bin" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="nginxLua" type="b2602c69:ProjectViewProjectNode" />
+              <item name="nginxLua" type="462c0819:PsiDirectoryNode" />
+              <item name="app" type="462c0819:PsiDirectoryNode" />
+              <item name="conf" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="nginxLua" type="b2602c69:ProjectViewProjectNode" />
+              <item name="nginxLua" type="462c0819:PsiDirectoryNode" />
+              <item name="app" type="462c0819:PsiDirectoryNode" />
+              <item name="html" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="nginxLua" type="b2602c69:ProjectViewProjectNode" />
+              <item name="nginxLua" type="462c0819:PsiDirectoryNode" />
+              <item name="app" type="462c0819:PsiDirectoryNode" />
+              <item name="lua" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="nginxLua" type="b2602c69:ProjectViewProjectNode" />
+              <item name="nginxLua" type="462c0819:PsiDirectoryNode" />
               <item name="nginx_conf" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
+      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -230,20 +240,20 @@
       <updated>1531193041084</updated>
       <workItem from="1531193044195" duration="51000" />
       <workItem from="1531193136834" duration="10077000" />
-      <workItem from="1535964316972" duration="5069000" />
+      <workItem from="1535964316972" duration="6915000" />
+      <workItem from="1536289818973" duration="2641000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="15633000" />
+    <option name="totallyTimeSpent" value="20120000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="126" y="57" width="1249" height="757" extended-state="0" />
+    <frame x="486" y="23" width="1249" height="757" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info anchor="right" id="Palette" order="3" />
       <window_info anchor="bottom" id="TODO" order="6" />
-      <window_info anchor="bottom" id="Messages" order="7" />
       <window_info anchor="right" id="Palette&#9;" order="3" />
       <window_info id="Image Layers" order="2" />
       <window_info anchor="right" id="Capture Analysis" order="3" />
@@ -252,12 +262,12 @@
       <window_info anchor="bottom" id="Database Changes" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Run" order="2" />
       <window_info anchor="bottom" id="Version Control" order="7" />
-      <window_info anchor="bottom" id="Terminal" order="7" sideWeight="0.49958575" visible="true" weight="0.3287879" />
+      <window_info anchor="bottom" id="Terminal" order="7" sideWeight="0.49958575" weight="0.3287879" />
       <window_info id="Capture Tool" order="2" />
       <window_info id="Designer" order="2" />
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.15658657" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.15907209" />
       <window_info anchor="right" id="Database" order="3" />
-      <window_info anchor="right" id="SciView" />
+      <window_info anchor="right" id="SciView" order="4" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info id="UI Designer" order="2" />
@@ -270,18 +280,19 @@
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Find" order="1" />
+      <window_info anchor="bottom" id="Messages" order="7" />
     </layout>
     <layout-to-restore>
-      <window_info anchor="right" id="Palette" order="4" />
+      <window_info anchor="right" id="Palette" order="3" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="3" weight="0.25" />
-      <window_info anchor="right" id="Capture Analysis" order="5" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="right" id="Capture Analysis" order="4" />
       <window_info anchor="bottom" id="Run" order="2" />
-      <window_info anchor="right" id="Ant Build" order="2" weight="0.25" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="bottom" id="Message" order="0" />
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.15658657" />
-      <window_info anchor="right" id="SciView" order="0" />
-      <window_info anchor="right" id="Theme Preview" order="6" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.15907209" />
+      <window_info anchor="right" id="SciView" order="9" />
+      <window_info anchor="right" id="Theme Preview" order="5" />
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Database Changes" order="7" show_stripe_button="false" />
       <window_info id="Image Layers" order="2" />
@@ -290,16 +301,16 @@
       <window_info id="UI Designer" order="4" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
-      <window_info anchor="right" id="Database" order="7" />
-      <window_info anchor="right" id="Palette&#9;" order="8" />
-      <window_info active="true" anchor="bottom" id="Terminal" order="8" sideWeight="0.49958575" visible="true" weight="0.3287879" />
+      <window_info anchor="right" id="Database" order="6" />
+      <window_info anchor="right" id="Palette&#9;" order="7" />
+      <window_info anchor="bottom" id="Terminal" order="8" sideWeight="0.49958575" visible="true" weight="0.3287879" />
       <window_info anchor="bottom" id="Event Log" order="9" sideWeight="0.50041425" side_tool="true" weight="0.3287879" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="Version Control" order="10" />
       <window_info id="Capture Tool" order="5" />
-      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="1" type="SLIDING" weight="0.4" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="bottom" id="Messages" order="11" />
-      <window_info anchor="right" id="Maven Projects" order="9" />
+      <window_info anchor="right" id="Maven Projects" order="8" />
       <window_info id="Favorites" order="6" side_tool="true" />
     </layout-to-restore>
   </component>
@@ -450,20 +461,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/lua/demo4.lua">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="223">
-          <caret line="15" column="3" lean-forward="true" selection-start-line="15" selection-start-column="3" selection-end-line="15" selection-end-column="3" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/lua/redis_pool.lua">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="570">
-          <caret line="19" column="14" selection-start-line="19" selection-start-column="14" selection-end-line="19" selection-end-column="14" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/lua/websocket.lua">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="321">
@@ -492,6 +489,16 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/nginxLua.iml">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/html/gray.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="7" selection-start-column="7" selection-end-column="7" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/app/bin/taillog.sh">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="15">
@@ -506,20 +513,17 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/nginxLua.iml">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/html/gray.html">
+    <entry file="file://$PROJECT_DIR$/app/bin/deploy.sh">
       <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret column="7" selection-start-column="7" selection-end-column="7" />
+        <state relative-caret-position="30">
+          <caret line="2" column="10" selection-start-line="2" selection-start-column="10" selection-end-line="2" selection-end-column="10" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/nginx_conf/nginx.conf">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="328">
-          <caret line="28" column="1" lean-forward="true" selection-start-line="28" selection-start-column="1" selection-end-line="28" selection-end-column="1" />
+        <state relative-caret-position="390">
+          <caret line="26" column="24" selection-start-line="26" selection-start-column="21" selection-end-line="26" selection-end-column="24" />
         </state>
       </provider>
     </entry>
@@ -532,29 +536,43 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/lua/demo1.lua">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="290">
-          <caret line="22" column="17" selection-start-line="22" selection-end-line="23" />
+        <state relative-caret-position="183">
+          <caret line="14" column="23" lean-forward="true" selection-start-line="14" selection-start-column="23" selection-end-line="14" selection-end-column="23" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/lua/demo4.lua">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="330">
+          <caret line="22" column="10" selection-start-line="22" selection-end-line="22" selection-end-column="10" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/conf/lua.conf">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="60">
-          <caret line="4" column="20" lean-forward="true" selection-start-line="4" selection-end-line="5" />
+        <state relative-caret-position="46">
+          <caret line="9" column="13" lean-forward="true" selection-start-line="9" selection-end-line="10" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/lua/update.lua">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="45">
+          <caret line="3" column="14" lean-forward="true" selection-start-line="3" selection-start-column="14" selection-end-line="3" selection-end-column="14" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/conf/gray.conf">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="105">
-          <caret line="7" selection-start-line="7" selection-end-line="10" selection-end-column="3" />
+          <caret line="7" column="18" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="18" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/bin/deploy.sh">
+    <entry file="file://$PROJECT_DIR$/app/lua/redis_pool.lua">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="30">
-          <caret line="2" column="47" selection-start-line="2" selection-start-column="47" selection-end-line="2" selection-end-column="47" />
+        <state relative-caret-position="225">
+          <caret line="15" column="3" lean-forward="true" selection-start-line="15" selection-start-column="3" selection-end-line="15" selection-end-column="3" />
         </state>
       </provider>
     </entry>

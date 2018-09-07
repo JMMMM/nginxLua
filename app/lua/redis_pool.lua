@@ -7,7 +7,7 @@ function redis_pool:get_connect()
         return false,"redis.socket_failed:" .. (err or "nil")
     end
     client:set_timeout(5000)
-    local result,msg = client:connect("192.168.4.89","6379")
+    local result,msg = client:connect("192.168.4.196","6379")
     if not result then
         return false,msg
     end

@@ -13,7 +13,7 @@ local redis = require("resty.redis")
   
 local red = redis:new()  
 red:set_timeout(1000)  
-local ip = "192.168.4.89"
+local ip = "192.168.4.196"
 local port = 6379  
 local ok, err = red:connect(ip, port)  
 if not ok then  

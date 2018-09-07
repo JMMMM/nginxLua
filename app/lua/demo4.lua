@@ -12,7 +12,7 @@ local resp, err = client:get("msg")
 
 if not resp then
     ngx.say("get msg error : ", err)
-    return close_redis(red)
+    return close_redis(client)
 end
 
 if resp == ngx.null then
