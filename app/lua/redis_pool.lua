@@ -2,10 +2,14 @@ local _M = {}
 _M._VERSION ='0.0.1'
 
 local resty_redis = require "resty.redis"
-_M.new = function(self,host,port,timeout)
-    self.host = host
-    self.port = port
-    self.timeout = timeout
+
+_M.new = function(self,conf)
+    self.host = conf.host
+    self.port = conf.port
+    self.timeout = conf.timeout
+    self.poolsize = conf.poolsize
+    self.idletime = conf.idletime
+
     self.client = resty_redis:new()
     return setmetatable({client = self.client},{__index=_M})
 end

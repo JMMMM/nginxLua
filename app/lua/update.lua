@@ -1,6 +1,7 @@
 local redis_pool = require("redis_pool")
+local config = require "config.lua"
 
-local pool = redis_pool:new('192.168.4.196', '6379', 5000)
+local pool = redis_pool:new(config.redis_config)
 local ok, err = redis_pool:get_connect()
 if not ok then ngx.log(ngx.ERR, err) end
 
