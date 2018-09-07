@@ -1,31 +1,26 @@
-local redis = require "resty.redis"
-local redis_pool = {}
+local _M = {}
+_M._VERSION ='0.0.1'
 
-function redis_pool:get_connect()
-    local client,err = redis:new()
-    if not client then
-        return false,"redis.socket_failed:" .. (err or "nil")
-    end
-    client:set_timeout(5000)
-    local result,msg = client:connect("192.168.4.196","6379")
-    if not result then
-        return false,msg
-    end
-
-    return true,client
+local resty_redis = require "resty.redis"
+_M.new = function(self,host,port,timeout)
+    self.host = host
+    self.port = port
+    self.timeout = timeout
+    self.client = resty_redis:new()
+    return setmetatable({client = self.client},{__index=_M})
 end
 
-function redis_pool:close(client)
-    if not client then
-        return
-    end
+_M.get_connect = function(self)
+    self.client:set_timeout(self.timeout)
+    local ok,err = self.client:connect(self.host,self.port)
+    if not ok then return false,err end
+    return true,""
+end
 
+_M.return_connect = function(self)
     local pool_max_idle_time = 1000
-    local pool_size =10
-    local ok,err = client.set_keepalive(pool_max_idle_time,pool_size)
-    if not ok then
-        ngx.say("set keepalive error:",err)
-     end
+    local pool_size = 10
+    return self.client:set_keepalive(pool_max_idle_time, pool_size)
 end
 
-return redis_pool
+return _M

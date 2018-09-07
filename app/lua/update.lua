@@ -1,22 +1,12 @@
 local redis_pool = require("redis_pool")
-local ok,client = redis_pool.get_connect()
 
-if not ok then
-    ngx.say("redis pool exception ")
-end
+local client = redis_pool:new('192.168.4.196', '6379', 5000)
+local ok, err = redis_pool:get_connect()
+if not ok then ngx.log(ngx.ERR, err) end
 
-local resp,err = client:lrange("gray_list",0,-1)
-
-if not resp then
-    ngx.say("get gray_list error:",err)
-    return redis_pool.close(client)
-end
-
-redis_pool.close(client)
-if resp == ngx.null then
-    resp =''
-end
+local resp, err = client:lrange("gray_list", 0, -1)
+redis_pool.return_connect(client)
 
 local sharedDb = ngx.shared.shared_dict
-sharedDb:set('gray_list',resp)
+sharedDb:set('gray_list', resp)
 ngx.say(resp)
