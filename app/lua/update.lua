@@ -9,5 +9,11 @@ local resp, err = pool.client:lrange("gray_list", 0, -1)
 redis_pool:return_connect()
 
 local sharedDb = ngx.shared.shared_dict
-sharedDb:set('gray_list', resp)
-ngx.say(resp)
+
+sharedDb:flush_all()
+
+for k, v in pairs(resp) do
+    sharedDb:set(v, "gray")
+end
+
+ngx.say("success!")
