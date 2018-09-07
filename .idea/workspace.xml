@@ -2,11 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="5d68c769-70ab-45a7-879e-0c53c61a8b37" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/app/lua/check.lua" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/conf/gray.conf" beforeDir="false" afterPath="$PROJECT_DIR$/app/conf/gray.conf" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/lua/update.lua" beforeDir="false" afterPath="$PROJECT_DIR$/app/lua/update.lua" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/nginx_conf/nginx.conf" beforeDir="false" afterPath="$PROJECT_DIR$/nginx_conf/nginx.conf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/lua/check.lua" beforeDir="false" afterPath="$PROJECT_DIR$/app/lua/check.lua" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -27,11 +23,20 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="check.lua" pinned="false" current-in-tab="false">
+      <file leaf-file-name="check.lua" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/lua/check.lua">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="135">
-              <caret line="9" selection-start-line="9" selection-end-line="9" />
+            <state relative-caret-position="90">
+              <caret line="6" column="31" selection-start-line="6" selection-start-column="31" selection-end-line="6" selection-end-column="31" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="config.lua" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/lua/config.lua">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="165">
+              <caret line="11" lean-forward="true" selection-end-line="12" selection-end-column="9" />
             </state>
           </provider>
         </entry>
@@ -45,11 +50,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="update.lua" pinned="false" current-in-tab="true">
+      <file leaf-file-name="update.lua" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/lua/update.lua">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="240">
-              <caret line="16" column="3" lean-forward="true" selection-start-line="16" selection-start-column="3" selection-end-line="16" selection-end-column="3" />
+            <state relative-caret-position="105">
+              <caret line="7" column="47" selection-start-line="7" selection-start-column="38" selection-end-line="7" selection-end-column="47" />
             </state>
           </provider>
         </entry>
@@ -94,8 +99,8 @@
         <option value="$PROJECT_DIR$/app/lua/config.lua" />
         <option value="$PROJECT_DIR$/app/conf/gray.conf" />
         <option value="$PROJECT_DIR$/nginx_conf/nginx.conf" />
-        <option value="$PROJECT_DIR$/app/lua/check.lua" />
         <option value="$PROJECT_DIR$/app/lua/update.lua" />
+        <option value="$PROJECT_DIR$/app/lua/check.lua" />
       </list>
     </option>
   </component>
@@ -269,7 +274,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="29682000" />
+    <option name="totallyTimeSpent" value="29816000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="594" y="41" width="1249" height="757" extended-state="0" />
@@ -285,10 +290,10 @@
       <window_info anchor="bottom" id="Database Changes" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Run" order="2" />
       <window_info anchor="bottom" id="Version Control" order="7" />
-      <window_info active="true" anchor="bottom" id="Terminal" order="7" sideWeight="0.49875724" visible="true" weight="0.3287879" />
+      <window_info anchor="bottom" id="Terminal" order="7" sideWeight="0.49875724" visible="true" weight="0.3287879" />
       <window_info id="Capture Tool" order="2" />
       <window_info id="Designer" order="2" />
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.1764706" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.1764706" />
       <window_info anchor="right" id="LuaJ" order="4" weight="0.32974318" />
       <window_info anchor="right" id="Database" order="3" />
       <window_info anchor="right" id="SciView" order="4" />
@@ -588,13 +593,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/lua/demo2.lua">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="228">
-          <caret line="6" column="9" selection-start-line="6" selection-start-column="9" selection-end-line="6" selection-end-column="9" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/lua/websocket.lua">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="321">
@@ -661,13 +659,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/lua/demo1.lua">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="183">
-          <caret line="14" column="23" lean-forward="true" selection-start-line="14" selection-start-column="23" selection-end-line="14" selection-end-column="23" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/lua/demo4.lua">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="330">
@@ -689,24 +680,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/lua/config.lua">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="165">
-          <caret line="11" lean-forward="true" selection-end-line="12" selection-end-column="9" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/conf/gray.conf">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="300">
           <caret line="20" column="40" lean-forward="true" selection-start-line="20" selection-start-column="40" selection-end-line="20" selection-end-column="40" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/lua/check.lua">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="135">
-          <caret line="9" selection-start-line="9" selection-end-line="9" />
         </state>
       </provider>
     </entry>
@@ -719,8 +696,36 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/lua/update.lua">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="240">
-          <caret line="16" column="3" lean-forward="true" selection-start-line="16" selection-start-column="3" selection-end-line="16" selection-end-column="3" />
+        <state relative-caret-position="105">
+          <caret line="7" column="47" selection-start-line="7" selection-start-column="38" selection-end-line="7" selection-end-column="47" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/lua/config.lua">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="165">
+          <caret line="11" lean-forward="true" selection-end-line="12" selection-end-column="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/lua/demo2.lua">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="36" selection-start-column="16" selection-end-column="36" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/lua/demo1.lua">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="183">
+          <caret line="14" column="23" lean-forward="true" selection-start-line="14" selection-start-column="23" selection-end-line="14" selection-end-column="23" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/lua/check.lua">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="90">
+          <caret line="6" column="31" selection-start-line="6" selection-start-column="31" selection-end-line="6" selection-end-column="31" />
         </state>
       </provider>
     </entry>
